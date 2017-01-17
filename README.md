@@ -1,0 +1,1 @@
+# syomag.github.io
