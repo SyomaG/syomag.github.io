@@ -1,11 +1,11 @@
 .header, .footer {
-    height: 75px;
-    min-height: 75px;
-    max-height: 75px;
+    height: 150px;
+    min-height: 140px;
+    max-height: 140px;
 }
 
-#main [class*='col-md-'] {
-    height: 300px;
-    min-height: 300px;
-    max-height: 300px;
+#main [class*='col-'] {
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
 }
