@@ -4,10 +4,10 @@
     max-height: 75px;
 }
 
-#main [class*='col-md-'] {
-    height: 200px;
-    min-height: 200px;
-    max-height: 200px;
+.col-md-2, .col-md-8 {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
 }
 body {
   color: white;
