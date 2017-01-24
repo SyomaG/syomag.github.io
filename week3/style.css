@@ -1,0 +1,15 @@
+.header, .footer,.col-md-12 {
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+#main [class*='col-md-'] {
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+}
+body {
+  color: white;
+  font-weight: 700;
+}
