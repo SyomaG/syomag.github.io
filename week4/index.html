@@ -12,24 +12,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <style media="screen">
-    .toprow{
-      height: 75px;
-      min-height: 75px;
-      max-height: 75px;
-    }
+        .toprow {
+            height: 75px;
+            min-height: 75px;
+            max-height: 75px;
+        }
 
-    .middlerow{
-      height: 350px;
-      min-height: 350px;
-      max-height: 350px;
-    }
+        .middlerow {
+            height: 350px;
+            min-height: 350px;
+            max-height: 350px;
+        }
 
-    .bottomrow{
-      height: 25px;
-      min-height: 25px;
-      max-height: 25px;
-    }
-
+        .bottomrow {
+            height: 25px;
+            min-height: 25px;
+            max-height: 25px;
+        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -63,39 +62,39 @@
         <div class="row">
             <div class="col-md-12 middlerow randomColor">
 
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-6 bottomrow randomColor">
+
                 </div>
 
+                <div class="col-md-6 bottomrow randomColor">
 
-
-                <div class="row">
-                    <div class="col-md-6 bottomrow randomColor">
-
-                    </div>
-
-                    <div class="col-md-6 bottomrow randomColor">
-
-                    </div>
                 </div>
+            </div>
 
 
 
-      
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-        function getRandomNumber(min, max) {
-            return Math.floor(Math.random() * max + min);
-        }
-        $(document).ready(function() {
-            var bodyColumns = $(".randomColor");
-            bodyColumns.each(function() {
-                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-            })
-            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-        })
-    </script>
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script>
+                function getRandomNumber(min, max) {
+                    return Math.floor(Math.random() * max + min);
+                }
+                $(document).ready(function() {
+                    var bodyColumns = $(".randomColor");
+                    bodyColumns.each(function() {
+                        $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+                    })
+                    $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+                })
+            </script>
 </body>
 
 </html>
