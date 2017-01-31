@@ -25,10 +25,25 @@
         }
 
         .bottomrow {
-            height: 25px;
-            min-height: 25px;
-            max-height: 25px;
+            height: 250px;
+            min-height: 250px;
+            max-height: 250px;
         }
+
+        img{
+          width: 100%;
+        }
+
+        h1{
+          font-weight: 700;
+          line-height: 75px;
+        }
+
+        h2{
+          font-weight: 300;
+          line-height: 75px;
+        }
+
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,36 +58,39 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 toprow randomColor">
-
+              <h1>Colourful</h1>
             </div>
+
             <div class="col-md-6 toprow randomColor">
-
             </div>
-            <div class="col-md-1 toprow randomColor">
 
+            <div class="col-md-1 toprow randomColor">
+              <h2>Red</h2>
             </div>
-            <div class="col-md-1 toprow randomColor">
 
+            <div class="col-md-1 toprow randomColor">
+              <h2>Green</h2>
             </div>
-            <div class="col-md-1 toprow randomColor">
 
+            <div class="col-md-1 toprow randomColor">
+              <h2>Blue</h2>
             </div>
         </div>
 
+
         <div class="row">
             <div class="col-md-12 middlerow randomColor">
-
+              <img src="images/colourheader.jpg" alt="middle">
             </div>
-
 
 
             <div class="row">
                 <div class="col-md-6 bottomrow randomColor">
-
+                  <img src="images/fashionpic.png" alt="bottom">
                 </div>
 
                 <div class="col-md-6 bottomrow randomColor">
-
+                  <img src="images/catpic.jpg" alt="bottom">
                 </div>
             </div>
 
@@ -83,7 +101,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <!-- Include all compiled plugins (below), or include individual files as needed -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-            <script>
+      <!--     <script>
                 function getRandomNumber(min, max) {
                     return Math.floor(Math.random() * max + min);
                 }
@@ -94,7 +112,7 @@
                     })
                     $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
                 })
-            </script>
+            </script> -->
 </body>
 
 </html>
