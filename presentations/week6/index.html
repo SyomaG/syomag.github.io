@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 6 Presentation</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <style media="screen">
+        .header {
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            text-align: center;
+        }
+
+        .nav {
+            height: 50px;
+            min-height: 50px;
+            max-height: 50px;
+            text-align: center;
+        }
+
+        .body {
+            height: 300px;
+            min-height: 300px;
+            max-height: 300px;
+
+
+        }
+
+        .body img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        h1{
+          font-size: 60px;
+        }
+
+        h2{
+          font-size: 30px;
+        }
+
+        p{
+          text-indent: 15px;
+        }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="main" class="container">
+      <div class="row">
+        <div class="col-md-12 randomColor header">
+          <h1>Larry the Leaser</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 randomColor nav">
+          <h2>Home</h2>
+        </div>
+        <div class="col-md-3 randomColor nav">
+          <h2>Cars</h2>
+        </div>
+        <div class="col-md-3 randomColor nav">
+          <h2>Location</h2>
+        </div>
+        <div class="col-md-3 randomColor nav">
+          <h2>Price</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 randomColor body">
+          <img src="car.jpg" alt="carpic" height="300px" width="300px">
+        </div>
+
+        <div class="col-md-6 randomColor body">
+          <p> This wireframe fixes the problem as all the main content is big and can be clearly be seen by the user. I also have placed everything in the center where the layout wont appear to be random or uneven or seem to be out of place in any way. I always find that when content is lined up and in the center, it gives a more clean layout rather than having content all over the webpage or all squished into one area.</p><p> On the outside, we’ll gently wash away the salty grime that has been building up, with a full range of auto detailing services. The Auto Spa’s professional staff can even provide polishing and special finishing, including paint-less dent removal and bumper repairs if you wish. Plus, we offer mechanical auto care services, including brake or wheel repair and refinishing - as well as lube, oil & filter services. We can do it all. Our Tire and Rim cleaners utilize an appropriate level pressure wash with detergent mixes that reach crevices, removing brake dust, dirt and grime wax without damaging your vehicles' surface. We take Pride in being a GREEN company. Our spot-free additives ensure a clean, lustrous surface appearance 100% of the time.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 randomColor body">
+          <p>On the outside, we’ll gently wash away the salty grime that has been building up, with a full range of auto detailing services. The Auto Spa’s professional staff can even provide polishing and special finishing, including paint-less dent removal and bumper repairs if you wish. Plus, we offer mechanical auto care services, including brake or wheel repair and refinishing - as well as lube, oil & filter services. We can do it all. Book your appointment now for The Auto Spa treatment for your favourite vehicles – and first time customers get a 10% Discount! Our informative and friendly staff will make it easy for you to choose the correct detailing package for your car – inside and out. We have always believed that in order to earn your loyalty, we must provide you with exceptional service, quality and value.
+
+            Mud, dropped food, children, pets, spilled milk. These are just a few of the things that make the interior of your car look awful and smell terrible. At The Auto Spa Ltd., we are experts at neutralizing odours and removing stains.
+
+            We will pretreat, shampoo and extract if necessary. Once were done, you'll be proud of your vehicle and nobody will object to getting in the car with you. We look forward to demonstrating this to you soon and showing how much we care for cars, brilliantly.</p>
+        </div>
+        <div class="col-md-6 randomColor body">
+          <img src="car2.jpg" alt="carpic" height="300px" width="300px">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 randomColor nav">
+          <p>All imgaes are subject to copyright</p>
+        </div>
+      </div>
+
+
+
+      </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * max + min);
+            }
+            $(document).ready(function() {
+                var bodyColumns = $(".randomColor");
+                bodyColumns.each(function() {
+                    $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+                })
+                $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+            })
+        </script>
+
+
+
+  </body>
+</html>
